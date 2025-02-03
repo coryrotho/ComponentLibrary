@@ -8,15 +8,15 @@ export const colorsBase = ['base-100', 'base-200', 'base-300', 'base-content'] a
 export type ColorsBase = (typeof colorsBase)[number]
 
 export const colorsContent = [
-  'base-content',
-  'primary-content',
-  'secondary-content',
-  'accent-content',
-  'neutral-content',
-  'info-content',
-  'success-content',
-  'warning-content',
-  'error-content'
+    'base-content',
+    'primary-content',
+    'secondary-content',
+    'accent-content',
+    'neutral-content',
+    'info-content',
+    'success-content',
+    'warning-content',
+    'error-content'
 ] as const
 export type ColorsContent = (typeof colorsContent)[number]
 

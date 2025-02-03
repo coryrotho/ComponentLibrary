@@ -1,12 +1,12 @@
 body,
 html {
-  background: transparent !important;
-  height: 100%;
-  background: white !important;
-  padding: 5px;
+    background: transparent !important;
+    height: 100%;
+    background: white !important;
+    padding: 5px;
 }
 
 html.dark,
 .dark body {
-  background: #1b1b1f !important;
+    background: #1b1b1f !important;
 }

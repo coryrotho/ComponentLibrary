@@ -7,21 +7,21 @@ import { colorsBrand, colorsState } from '../../globals/colors'
 import { sizes } from '../../globals/sizes'
 
 const state = reactive({
-  color: '' as ColorsBrand | ColorsState
+    color: '' as ColorsBrand | ColorsState
 })
 </script>
 <template>
-  <Story :layout="{ type: 'grid', width: '25%' }">
-    <template v-for="type in types" :key="type">
-      <template v-for="size in sizes" :key="size">
-        <Variant :title="`${type} - ${size}`">
-          <DaisyLoading :type="type" :size="size" :color="state.color" />
-        </Variant>
-      </template>
-    </template>
+    <Story :layout="{ type: 'grid', width: '25%' }">
+        <template v-for="type in types" :key="type">
+            <template v-for="size in sizes" :key="size">
+                <Variant :title="`${type} - ${size}`">
+                    <DaisyLoading :type="type" :size="size" :color="state.color" />
+                </Variant>
+            </template>
+        </template>
 
-    <template #controls>
-      <HstSelect v-model="state.color" :options="[...colorsBrand, ...colorsState]" title="Color" />
-    </template>
-  </Story>
+        <template #controls>
+            <HstSelect v-model="state.color" :options="[...colorsBrand, ...colorsState]" title="Color" />
+        </template>
+    </Story>
 </template>

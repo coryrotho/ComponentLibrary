@@ -1,3 +1,3 @@
 <template>
-  <DaisyLoading />
+    <DaisyLoading />
 </template>
